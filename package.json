@@ -18,7 +18,6 @@
     "preview": "bunx --bun astro build --verbose && bun wrangler pages dev ./dist",
     "astro": "astro",
     "deploy": "bunx --bun astro build && bun wrangler pages deploy ./dist",
-    "check:cf-typegen": "bun wrangler types",
     "check:astro": "bun astro check --verbose",
     "check:format": "bunx @biomejs/biome format . --write",
     "format": "biome format . --write",

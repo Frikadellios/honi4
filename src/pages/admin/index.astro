@@ -1,15 +1,9 @@
 ---
-import config from '../../config';
+import '@/styles/cms.css';
+import config from '@/config';
+import Layout from '@/layouts/Layout.astro';
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
-    <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^2.0.0/dist/main.css" />
-  </head>
-  <body>
+<Layout title="Admin Page" description='Here we find a place of Force'>
     <!-- Include the script that builds the page and powers StaticJs CMS -->
     <script is:inline src="https://unpkg.com/@staticcms/app@^2.0.0/dist/static-cms-app.js"></script>
 
@@ -19,5 +13,4 @@ import config from '../../config';
     <script is:inline define:vars={{ config }}>
       window.CMS.init({ config });
     </script>
-  </body>
-</html>
+</Layout>
